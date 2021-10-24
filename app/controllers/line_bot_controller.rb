@@ -14,10 +14,7 @@ class LineBotController < ApplicationController
       when Line::Bot::Event::Message
         case event.type
         when Line::Bot::Event::MessageType::Text
-          message = {
-            type: 'text',
-            text: event.message['text']
-          }
+          message = search_and_create_message(event.message['text'])
           client.reply_message(event['replyToken'], message)
         end
       end
@@ -35,8 +32,25 @@ class LineBotController < ApplicationController
     }
   end
 
-  def search_and_create_message()
+  def search_and_create_message(keyword)
     http_client = HTTPClient.new
+    array =["牡羊座","牡牛座","双子座","蟹座","獅子座","乙女座","天秤座","蠍座","射手座","山羊座","水瓶座","魚座"]
+    text = ''
+    require 'date'
+    date = Date.current.strftime("%Y/%m/%d")
+    url = 'http://api.jugemkey.jp/api/horoscope/free/' + date
+    response = http_client.get(url)
+    response = JSON.parse(response.body)
+    num = array.index(keyword)
+    result = response["horoscope"][date][num]
+    p result["content"]
+    text << 
+      result["sign"] + "\n" +
+      result["content"]
+      message = {
+        type: 'text',
+        text: text
+      }
   end
 
 
