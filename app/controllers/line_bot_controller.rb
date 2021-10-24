@@ -35,5 +35,9 @@ class LineBotController < ApplicationController
     }
   end
 
+  def search_and_create_message()
+    http_client = HTTPClient.new
+  end
+
 
 end
