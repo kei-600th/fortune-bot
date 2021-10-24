@@ -5,8 +5,11 @@ class LineBotController < ApplicationController
   def callback
 
     body = request.body.read
-    p body
-    
+    signature = request.env['HTTP_X_LINE_SIGNATURE']
+    unless client.validate_signature(body, signature)
+      return head :bad_request
+    end
+
   end
 
 
