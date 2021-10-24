@@ -38,19 +38,33 @@ class LineBotController < ApplicationController
     text = ''
     require 'date'
     date = Date.current.strftime("%Y/%m/%d")
-    url = 'http://api.jugemkey.jp/api/horoscope/free/' + date
+    url = create_url
     response = http_client.get(url)
     response = JSON.parse(response.body)
-    num = array.index(keyword)
-    result = response["horoscope"][date][num]
-    p result["content"]
-    text << 
-      result["sign"] + "\n" +
-      result["content"]
+    if array.index(keyword)
+      num = array.index(keyword)
+      result = response["horoscope"][date][num]
+      p result["content"]
+      text << 
+        result["sign"] + "\n" +
+        result["content"]
+        message = {
+          type: 'text',
+          text: text
+        }
+    else
       message = {
         type: 'text',
-        text: text
+        text: "そのような星座はありません"
       }
+    end
+  end
+
+  def create_url
+    require 'date'
+    date = Date.current.strftime("%Y/%m/%d")
+    url = 'http://api.jugemkey.jp/api/horoscope/free/' + date
+    return url
   end
 
 
