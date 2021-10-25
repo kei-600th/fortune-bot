@@ -55,9 +55,9 @@ class LineBotController < ApplicationController
             "type": "bubble",
             "hero": {
               "type": "image",
-              "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+              "url": "https://user-images.githubusercontent.com/72121574/138706370-4c77e6cd-2ef1-49f9-83d3-dd565a5b672f.jpeg",
               "size": "full",
-              "aspectRatio": "20:13",
+              "aspectRatio": "20:20",
               "aspectMode": "cover",
               "action": {
                 "type": "uri",
