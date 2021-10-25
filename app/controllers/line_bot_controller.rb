@@ -35,6 +35,25 @@ class LineBotController < ApplicationController
   def search_and_create_message(keyword)
     http_client = HTTPClient.new
     array =["牡羊座","牡牛座","双子座","蟹座","獅子座","乙女座","天秤座","蠍座","射手座","山羊座","水瓶座","魚座"]
+    img_array = [
+      "https://user-images.githubusercontent.com/72121574/138705897-44ec0410-c190-42c4-b301-792a35b579ce.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138705990-473403dd-6060-4ef6-b428-deaeca4b77fc.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138706034-506ec5b2-7215-42fe-8a16-9daad9e98720.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138706153-e0cfa29d-9d3d-44be-9835-811217e84a87.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138706219-3128dd93-c9ad-430e-9e6b-26a40baf11ad.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138706243-df46dfdf-d232-491f-9979-f3c63c7357d5.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138706263-8045f9ae-b6d2-4efe-8494-4afdecc3df62.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138706275-011e0f56-c434-4ff5-bb4d-c3410c953acf.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138706302-b808b9fd-1e57-4600-a294-1c6576b96265.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138706338-e5bfdf58-e5f5-41f7-8a8a-4ccff2d072d0.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138706352-ab0f0755-e7b9-4072-b452-374199a74a92.jpeg",
+      "https://user-images.githubusercontent.com/72121574/138706370-4c77e6cd-2ef1-49f9-83d3-dd565a5b672f.jpeg"
+    ]
+
+
+
+
+
     text = ''
     require 'date'
     date = Date.current.strftime("%Y/%m/%d")
@@ -55,7 +74,7 @@ class LineBotController < ApplicationController
             "type": "bubble",
             "hero": {
               "type": "image",
-              "url": "https://user-images.githubusercontent.com/72121574/138706370-4c77e6cd-2ef1-49f9-83d3-dd565a5b672f.jpeg",
+              "url": img_array[num],
               "size": "full",
               "aspectRatio": "20:20",
               "aspectMode": "cover",
