@@ -93,7 +93,7 @@ class LineBotController < ApplicationController
                   "contents": [
                     {
                       "type": "text",
-                      "text": "射手座",
+                      "text": result["sign"],
                       "weight": "bold",
                       "size": "xl",
                       "margin": "none",
@@ -102,7 +102,7 @@ class LineBotController < ApplicationController
                     },
                     {
                       "type": "text",
-                      "text": "1位(12星座中)",
+                      "text": "#{result["rank"]}位(12星座中)",
                       "size": "sm",
                       "color": "#999999",
                       "margin": "md",
@@ -154,7 +154,7 @@ class LineBotController < ApplicationController
                     },
                     {
                       "type": "text",
-                      "text": "4.0",
+                      "text": "#{result["total"]}.0",
                       "size": "sm",
                       "color": "#999999",
                       "margin": "md",
@@ -207,7 +207,7 @@ class LineBotController < ApplicationController
                     },
                     {
                       "type": "text",
-                      "text": "4.0",
+                      "text": "#{result["love"]}.0",
                       "size": "sm",
                       "color": "#999999",
                       "margin": "md",
@@ -260,7 +260,7 @@ class LineBotController < ApplicationController
                     },
                     {
                       "type": "text",
-                      "text": "4.0",
+                      "text": "#{result["job"]}.0",
                       "size": "sm",
                       "color": "#999999",
                       "margin": "md",
@@ -313,7 +313,7 @@ class LineBotController < ApplicationController
                     },
                     {
                       "type": "text",
-                      "text": "4.0",
+                      "text": "#{result["money"]}.0",
                       "size": "sm",
                       "color": "#999999",
                       "margin": "md",
@@ -325,7 +325,7 @@ class LineBotController < ApplicationController
                 },
                 {
                   "type": "text",
-                  "text": "とてもいい日でしょう素敵な1日になると思います。",
+                  "text": result["content"],
                   "margin": "lg",
                   "wrap": true,
                   "size": "xs",
@@ -351,7 +351,7 @@ class LineBotController < ApplicationController
                         },
                         {
                           "type": "text",
-                          "text": "黄緑色",
+                          "text": result["color"],
                           "wrap": true,
                           "color": "#666666",
                           "size": "sm",
@@ -373,7 +373,7 @@ class LineBotController < ApplicationController
                         },
                         {
                           "type": "text",
-                          "text": "熊のぬいぐるみ",
+                          "text": result["item"],
                           "wrap": true,
                           "color": "#666666",
                           "size": "sm",
