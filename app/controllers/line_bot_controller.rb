@@ -88,40 +88,69 @@ class LineBotController < ApplicationController
               "layout": "vertical",
               "contents": [
                 {
-                  "type": "text",
-                  "text": "Brown Cafe",
-                  "weight": "bold",
-                  "size": "xl"
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "射手座",
+                      "weight": "bold",
+                      "size": "xl",
+                      "margin": "none",
+                      "offsetTop": "none",
+                      "offsetEnd": "none"
+                    },
+                    {
+                      "type": "text",
+                      "text": "1位(12星座中)",
+                      "size": "sm",
+                      "color": "#999999",
+                      "margin": "md",
+                      "flex": 0,
+                      "gravity": "center"
+                    }
+                  ]
                 },
                 {
                   "type": "box",
                   "layout": "baseline",
-                  "margin": "md",
                   "contents": [
                     {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      "type": "text",
+                      "text": "総合運",
+                      "size": "md",
+                      "margin": "md",
+                      "flex": 1
                     },
                     {
                       "type": "icon",
                       "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
                     },
                     {
                       "type": "icon",
                       "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
                     },
                     {
                       "type": "icon",
                       "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
                     },
                     {
                       "type": "icon",
                       "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
+                      "offsetStart": "sm"
                     },
                     {
                       "type": "text",
@@ -131,7 +160,176 @@ class LineBotController < ApplicationController
                       "margin": "md",
                       "flex": 0
                     }
-                  ]
+                  ],
+                  "margin": "md",
+                  "offsetEnd": "md"
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "恋愛運",
+                      "size": "md",
+                      "margin": "md",
+                      "flex": 1
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "text",
+                      "text": "4.0",
+                      "size": "sm",
+                      "color": "#999999",
+                      "margin": "md",
+                      "flex": 0
+                    }
+                  ],
+                  "margin": "md",
+                  "offsetEnd": "md"
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "仕事運",
+                      "size": "md",
+                      "margin": "md",
+                      "flex": 1
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "text",
+                      "text": "4.0",
+                      "size": "sm",
+                      "color": "#999999",
+                      "margin": "md",
+                      "flex": 0
+                    }
+                  ],
+                  "margin": "md",
+                  "offsetEnd": "md"
+                },
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "金運　",
+                      "size": "md",
+                      "margin": "md",
+                      "flex": 1
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "icon",
+                      "size": "sm",
+                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
+                      "offsetStart": "sm"
+                    },
+                    {
+                      "type": "text",
+                      "text": "4.0",
+                      "size": "sm",
+                      "color": "#999999",
+                      "margin": "md",
+                      "flex": 0
+                    }
+                  ],
+                  "margin": "md",
+                  "offsetEnd": "md"
+                },
+                {
+                  "type": "text",
+                  "text": "とてもいい日でしょう素敵な1日になると思います。",
+                  "margin": "lg",
+                  "wrap": true,
+                  "size": "xs",
+                  "color": "#888888"
                 },
                 {
                   "type": "box",
@@ -146,14 +344,14 @@ class LineBotController < ApplicationController
                       "contents": [
                         {
                           "type": "text",
-                          "text": "Place",
+                          "text": "ラッキーカラー",
                           "color": "#aaaaaa",
                           "size": "sm",
-                          "flex": 1
+                          "flex": 4
                         },
                         {
                           "type": "text",
-                          "text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
+                          "text": "黄緑色",
                           "wrap": true,
                           "color": "#666666",
                           "size": "sm",
@@ -168,14 +366,14 @@ class LineBotController < ApplicationController
                       "contents": [
                         {
                           "type": "text",
-                          "text": "Time",
+                          "text": "ラッキーアイテム",
                           "color": "#aaaaaa",
                           "size": "sm",
-                          "flex": 1
+                          "flex": 4
                         },
                         {
                           "type": "text",
-                          "text": "10:00 - 23:00",
+                          "text": "熊のぬいぐるみ",
                           "wrap": true,
                           "color": "#666666",
                           "size": "sm",
@@ -186,40 +384,19 @@ class LineBotController < ApplicationController
                   ]
                 }
               ]
-            },
-            "footer": {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "button",
-                  "style": "link",
-                  "height": "sm",
-                  "action": {
-                    "type": "uri",
-                    "label": "CALL",
-                    "uri": "https://linecorp.com"
-                  }
-                },
-                {
-                  "type": "button",
-                  "style": "link",
-                  "height": "sm",
-                  "action": {
-                    "type": "uri",
-                    "label": "WEBSITE",
-                    "uri": "https://linecorp.com"
-                  }
-                },
-                {
-                  "type": "spacer",
-                  "size": "sm"
-                }
-              ],
-              "flex": 0
             }
           }
+
+
+
+
+
+
+
+
+
+
+          
         }
     else
       message = {
