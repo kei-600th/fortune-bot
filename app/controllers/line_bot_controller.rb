@@ -119,46 +119,15 @@ class LineBotController < ApplicationController
                       "type": "text",
                       "text": "総合運",
                       "size": "md",
-                      "margin": "md",
-                      "flex": 1
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
-                      "offsetStart": "sm"
+                      "margin": "md"
                     },
                     {
                       "type": "text",
-                      "text": "#{result["total"]}.0",
+                      "text": "#{result["total"]}点",
                       "size": "sm",
                       "color": "#999999",
                       "margin": "md",
-                      "flex": 0
+                      "align": "center"
                     }
                   ],
                   "margin": "md",
@@ -172,46 +141,15 @@ class LineBotController < ApplicationController
                       "type": "text",
                       "text": "恋愛運",
                       "size": "md",
-                      "margin": "md",
-                      "flex": 1
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
-                      "offsetStart": "sm"
+                      "margin": "md"
                     },
                     {
                       "type": "text",
-                      "text": "#{result["love"]}.0",
+                      "text": "#{result["love"]}点",
                       "size": "sm",
                       "color": "#999999",
                       "margin": "md",
-                      "flex": 0
+                      "align": "center"
                     }
                   ],
                   "margin": "md",
@@ -225,46 +163,15 @@ class LineBotController < ApplicationController
                       "type": "text",
                       "text": "仕事運",
                       "size": "md",
-                      "margin": "md",
-                      "flex": 1
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
-                      "offsetStart": "sm"
+                      "margin": "md"
                     },
                     {
                       "type": "text",
-                      "text": "#{result["job"]}.0",
+                      "text": "#{result["job"]}点",
                       "size": "sm",
                       "color": "#999999",
                       "margin": "md",
-                      "flex": 0
+                      "align": "center"
                     }
                   ],
                   "margin": "md",
@@ -278,46 +185,15 @@ class LineBotController < ApplicationController
                       "type": "text",
                       "text": "金運　",
                       "size": "md",
-                      "margin": "md",
-                      "flex": 1
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                      "offsetStart": "sm"
-                    },
-                    {
-                      "type": "icon",
-                      "size": "sm",
-                      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
-                      "offsetStart": "sm"
+                      "margin": "md"
                     },
                     {
                       "type": "text",
-                      "text": "#{result["money"]}.0",
+                      "text": "#{result["money"]}点",
                       "size": "sm",
                       "color": "#999999",
                       "margin": "md",
-                      "flex": 0
+                      "align": "center"
                     }
                   ],
                   "margin": "md",
